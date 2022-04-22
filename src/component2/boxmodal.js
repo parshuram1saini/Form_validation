@@ -17,7 +17,7 @@ function Boxmodal() {
         id="purple"
         className="ui inverted purple button"
         onClick={() => {
-          return setOpenmodal(true), setModalheader(false);
+          return setOpenmodal(true), setModalheader();
         }}
       >
         {Formconstant.modal}
