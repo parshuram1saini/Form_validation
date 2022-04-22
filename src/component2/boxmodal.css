@@ -1,0 +1,16 @@
+*{
+    margin: 2px;
+    padding: 0;
+    box-sizing: border-box;
+}
+.head
+{
+    font-family:cursive;
+    text-align: center;
+    
+}
+#purple 
+{
+    text-align: center;
+    margin-left: 46%;
+}

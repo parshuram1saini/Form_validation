@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.formset
+{
+    /* position: absolute; */
+}
+#form{
+    margin-left: 25%;
+    margin-top: 2%;
+    padding-left: 2%;
+    padding-bottom: 2%;
+    width: 50%;
+    border: 2px solid slateblue;
+}
+.buttons
+{
+    margin-left: 70%;
+    display: flex;
+
+}
+.inline.fields
+{
+    display: flex;
+}
+.radiobutton
+{
+    margin: 1%;
+}
+#b
+{
+    width: 45%;
+}
+#a
+{
+    width: 45%;
+}
+.x
+{
+    margin-left: 90%;
+    padding: 2%;
+    font-size: large;
+    background:white;
+    border:none;
+    float: right;
+}

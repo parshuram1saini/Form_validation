@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.mygrid
+{
+    display: grid;
+    grid-template-columns: auto auto ;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+   
+}
+.box1{
+    background-color: aquamarine;
+    grid-row: 1/span 2;
+    
+   
+}
+.box2{
+    background-color: blueviolet;
+}
+.box3{
+    background-color: salmon;
+}
