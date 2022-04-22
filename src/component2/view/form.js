@@ -1,6 +1,11 @@
 import React from "react";
 import Formconstant from "../constant/constant";
 import "./form.css";
+import {
+  Inputfield,
+  Yesradiobutton,
+  Noradiobutton,
+} from "../radiobutton/radiobutton";
 
 function Formformat({ setOpenmodal, setModalheader }) {
   return (
@@ -29,13 +34,14 @@ function Formformat({ setOpenmodal, setModalheader }) {
                   <span style={{ color: "red" }}>*</span>
                 </label>
               </div>
-              <input
+              {/* <input
                 className="inputfield"
                 type="text"
                 id="a"
                 required
                 onChange={(e) => console.log(e.target.value)}
-              />
+              /> */}
+              <Inputfield />
             </div>
             <div className="inline fields">
               <div className="eight wide field">
@@ -43,7 +49,7 @@ function Formformat({ setOpenmodal, setModalheader }) {
                   {Formconstant.code} <span style={{ color: "red" }}>*</span>
                 </label>
               </div>
-              <input type="text" id="b" required />
+              <Inputfield />
             </div>
             <div className="inline fields">
               <div className="eight wide field">
@@ -52,24 +58,8 @@ function Formformat({ setOpenmodal, setModalheader }) {
                   <span style={{ color: "red" }}>*</span>
                 </label>
               </div>
-              <input
-                className="radiobutton"
-                type="radio"
-                name="radio1"
-                id="c"
-                required
-                onChange={(e) => console.log(e.target.value)}
-              ></input>
-              <span htmlFor="c">{Formconstant.yes}</span>
-              <input
-                className="radiobutton"
-                type="radio"
-                name="radio1"
-                id="d"
-                required
-                onChange={(e) => console.log(e.target.value)}
-              />
-              <span htmlFor="d">{Formconstant.no}</span>
+              <Yesradiobutton />
+              <Noradiobutton />
             </div>
             <div className="inline fields">
               <div className="eight wide field">
@@ -78,24 +68,8 @@ function Formformat({ setOpenmodal, setModalheader }) {
                   <span style={{ color: "red" }}>*</span>
                 </label>
               </div>
-              <input
-                className="radiobutton"
-                type="radio"
-                name="radio2"
-                id="e"
-                required
-                onChange={(e) => console.log(e.target.value)}
-              ></input>
-              <span htmlFor="e">{Formconstant.yes}</span>
-              <input
-                className="radiobutton"
-                type="radio"
-                name="radio2"
-                id="f"
-                required
-                onChange={(e) => console.log(e.target.value)}
-              ></input>
-              <span htmlFor="f">{Formconstant.no}</span>
+              <Yesradiobutton />
+              <Noradiobutton />
             </div>
             <div className="inline fields">
               <div className="eight wide field">
@@ -104,24 +78,8 @@ function Formformat({ setOpenmodal, setModalheader }) {
                   <span style={{ color: "red" }}>*</span>
                 </label>
               </div>
-              <input
-                className="radiobutton"
-                type="radio"
-                name="radio3"
-                id="g"
-                required
-                onChange={(e) => console.log(e.target.value)}
-              ></input>
-              <span htmlFor="g">{Formconstant.yes}</span>
-              <input
-                className="radiobutton"
-                type="radio"
-                name="radio3"
-                id="h"
-                required
-                onChange={(e) => console.log(e.target.value)}
-              ></input>
-              <span htmlFor="h">{Formconstant.no}</span>
+              <Yesradiobutton />
+              <Noradiobutton />
             </div>
             <div className="inline fields">
               <div className="eight wide field">
@@ -130,24 +88,8 @@ function Formformat({ setOpenmodal, setModalheader }) {
                   <span style={{ color: "red" }}>*</span>
                 </label>
               </div>
-              <input
-                className="radiobutton"
-                type="radio"
-                name="radio4"
-                id="i"
-                required
-                onChange={(e) => console.log(e.target.value)}
-              ></input>
-              <span htmlFor="i">{Formconstant.yes}</span>
-              <input
-                className="radiobutton"
-                type="radio"
-                name="radio4"
-                id="j"
-                required
-                onChange={(e) => console.log(e.target.value)}
-              ></input>
-              <span htmlFor="j">{Formconstant.no}</span>
+              <Yesradiobutton />
+              <Noradiobutton />
             </div>
             <div className="buttons">
               <button
