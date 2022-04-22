@@ -7,15 +7,20 @@
     margin-left: 25%;
     margin-top: 2%;
     padding-left: 2%;
-    padding-bottom: 2%;
+    padding-bottom: 4rem;
     width: 50%;
     border: 2px solid slateblue;
 }
-.buttons
+@media (min-width:600px ) 
 {
-    margin-left: 70%;
-    display: flex;
+  .buttons
+    {
+         display: flex;
+        flex-wrap: wrap; 
+        text-align: center;
+        float: right;
 
+    }
 }
 .inline.fields
 {
@@ -35,10 +40,16 @@
 }
 .x
 {
-    margin-left: 90%;
     padding: 2%;
+    width:12%;
     font-size: large;
     background:white;
     border:none;
     float: right;
+}
+.store-cross{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1%;
 }

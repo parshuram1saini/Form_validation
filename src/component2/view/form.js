@@ -12,15 +12,17 @@ function Formformat({ setOpenmodal, setModalheader }) {
         }}
       >
         <div id="form">
-          <button
-            className="x"
-            onClick={() => {
-              return setOpenmodal(false), setModalheader(true);
-            }}
-          >
-            {Formconstant.hidemodal}
-          </button>
-          <h1> {Formconstant.formheader}</h1>
+          <div className="store-cross">
+            <h1> {Formconstant.formheader}</h1>
+            <button
+              className="x"
+              onClick={() => {
+                return setOpenmodal(false), setModalheader(true);
+              }}
+            >
+              {Formconstant.hidemodal}
+            </button>
+          </div>
           <div className="ui form">
             <div className="inline fields">
               <div className="eight wide field">
@@ -161,7 +163,7 @@ function Formformat({ setOpenmodal, setModalheader }) {
             </div>
             <div className="buttons">
               <button
-                class="ui red basic button"
+                className="ui red basic button"
                 onClick={() => {
                   return setOpenmodal(false), setModalheader(true);
                 }}

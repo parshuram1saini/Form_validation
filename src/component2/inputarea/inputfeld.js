@@ -5,7 +5,7 @@ function Inputfield() {
   return (
     <>
       <input
-        className="inputfield1"
+        className="inputfield"
         type="text"
         id="a"
         required
