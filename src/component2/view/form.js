@@ -2,7 +2,11 @@ import React, { useState } from "react";
 import Formconstant from "../constant/constant";
 import "./form.css";
 import Inputfield from "../inputarea/inputfeld";
+
 function Formformat({ setOpenmodal, setModalheader }) {
+  const handlevalue = (e) => {
+    console.log(e.target.value);
+  };
   return (
     <>
       <form
@@ -53,10 +57,9 @@ function Formformat({ setOpenmodal, setModalheader }) {
                 type="radio"
                 name="radiobutton1"
                 id="defaultcheck4"
+                value="YES"
                 required
-                onChange={(e) => {
-                  console.log(e.target.value);
-                }}
+                onChange={handlevalue}
               ></input>
               <span htmlFor="defaultcheck1">{Formconstant.yes}</span>
               <input
@@ -64,10 +67,9 @@ function Formformat({ setOpenmodal, setModalheader }) {
                 type="radio"
                 name="radiobutton1"
                 id="defaultcheck2"
+                value="NO"
                 required
-                onChange={(e) => {
-                  console.log(e.target.value);
-                }}
+                onChange={handlevalue}
               />
               <span htmlFor="defaultcheck2">{Formconstant.no}</span>
             </div>
@@ -83,10 +85,9 @@ function Formformat({ setOpenmodal, setModalheader }) {
                 type="radio"
                 name="radiobutton2"
                 id="defaultcheck3"
+                value="YES"
                 required
-                onChange={(e) => {
-                  console.log(e.target.value);
-                }}
+                onChange={handlevalue}
               ></input>
               <span htmlFor="defaultcheck3">{Formconstant.yes}</span>
               <input
@@ -94,10 +95,9 @@ function Formformat({ setOpenmodal, setModalheader }) {
                 type="radio"
                 name="radiobutton2"
                 id="defaultcheck4"
+                value="NO"
                 required
-                onChange={(e) => {
-                  console.log(e.target.value);
-                }}
+                onChange={handlevalue}
               />
               <span htmlFor="defaultcheck4">{Formconstant.no}</span>
             </div>
@@ -113,10 +113,9 @@ function Formformat({ setOpenmodal, setModalheader }) {
                 type="radio"
                 name="radiobutton3"
                 id="defaultcheck5"
+                value="YES"
                 required
-                onChange={(e) => {
-                  console.log(e.target.value);
-                }}
+                onChange={handlevalue}
               ></input>
               <span htmlFor="defaultcheck5">{Formconstant.yes}</span>
               <input
@@ -124,10 +123,9 @@ function Formformat({ setOpenmodal, setModalheader }) {
                 type="radio"
                 name="radiobutton3"
                 id="defaultcheck6"
+                value="NO"
                 required
-                onChange={(e) => {
-                  console.log(e.target.value);
-                }}
+                onChange={handlevalue}
               />
               <span htmlFor="defaultcheck6">{Formconstant.no}</span>
             </div>
@@ -143,10 +141,9 @@ function Formformat({ setOpenmodal, setModalheader }) {
                 type="radio"
                 name="radiobutton4"
                 id="defaultcheck7"
+                value="YES"
                 required
-                onChange={(e) => {
-                  console.log(e.target.value);
-                }}
+                onChange={handlevalue}
               ></input>
               <span htmlFor="deafultcheck7">{Formconstant.yes}</span>
               <input
@@ -154,10 +151,9 @@ function Formformat({ setOpenmodal, setModalheader }) {
                 type="radio"
                 name="radiobutton4"
                 id="identify4"
+                value="NO"
                 required
-                onChange={(e) => {
-                  console.log(e.target.value);
-                }}
+                onChange={handlevalue}
               />
               <span htmlFor="identify4">{Formconstant.no}</span>
             </div>
